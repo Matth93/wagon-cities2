@@ -1,3 +1,6 @@
+const SET_CITIES = 'SET_CITIES';
+const SET_ACTIVE_CITY = 'SET_ACTIVE_CITY';
+
 const setCities = () => {
   const cities = [
     { name: "Paris", address: "16 Villa Gaudelet, 75011 Paris", slug: "paris" },
@@ -27,16 +30,16 @@ const setCities = () => {
   ];
 
   return {
-    type: 'SET_CITIES',
+    type: SET_CITIES,
     payload: cities
   };
 };
 
 const setActiveCity = (city) => {
   return {
-    type: 'SET_ACTIVE_CITY',
+    type: SET_ACTIVE_CITY,
     payload: city
   };
 };
 
-export { setCities, setActiveCity };
+export { SET_CITIES, SET_ACTIVE_CITY, setCities, setActiveCity };
